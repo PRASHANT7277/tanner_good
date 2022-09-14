@@ -14,4 +14,6 @@ Deploy link:- https://tannergoods-woad.vercel.app/.
 - Cart page with adding and removing items.
 - Payment page with total amount.
 
+## Feedback
 
+If you have any feedback, please reach out to me at kumar.prashant477@gmail.com.
