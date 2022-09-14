@@ -1,6 +1,6 @@
 # Tanner Goods clone
 
-Hello everyone I cloned a kimaye website by using React,HTML,CSS,JS,JSON,Chakra UI.
+Hello everyone I cloned a Tanner Goods website by using React,HTML,CSS,JS,JSON,Chakra UI.
 
 Deploy link:- https://tannergoods-woad.vercel.app/.
 
