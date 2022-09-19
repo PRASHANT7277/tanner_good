@@ -18,7 +18,7 @@ including the Mazama Wares collection of handcrafted glassware etc.
 
 ## Product page
 
-![App Screenshot](https://i.postimg.cc/8cMJPzks/Screenshot-327.png)
+![App Screenshot](https://i.postimg.cc/RSbcdWj1/Screenshot-327.png)
 
 ## Cart page
 
