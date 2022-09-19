@@ -1,19 +1,47 @@
-# Tanner Goods clone
 
-Hello everyone I cloned a Tanner Goods website by using React,HTML,CSS,JS,JSON,Chakra UI.
+# Project Title
 
-Deploy link:- https://tannergoods-woad.vercel.app/.
+This is a clone of E-commerce site which Deals with the highest quality leather belts, wallets and accessories,
+including the Mazama Wares collection of handcrafted glassware etc.
 
 
 ## Features
 
 - Homepage with carousel feature.
-- SignUp & Login page with find feature.
-- Product page with sorting feature.
-- Single Product page with add to cart option.
+- Signup & login page with find features.
 - Cart page with adding and removing items.
+- Product page with sorting feature.
 - Payment page with total amount.
+## Homepage
 
-## Feedback
+![App Screenshot](https://i.postimg.cc/RhVQWt8q/tanner.png)
 
-If you have any feedback, please reach out to me at kumar.prashant477@gmail.com.
+## Product page
+
+![App Screenshot](https://i.postimg.cc/8cMJPzks/Screenshot-327.png)
+
+## Cart page
+
+![App Screenshot](https://i.postimg.cc/xj5VBS3P/Screenshot-330.png)
+
+## Checkout page
+
+![App Screenshot](https://i.postimg.cc/q7s5n8mG/Screenshot-329.png)
+
+## Deployment
+
+To deploy this project run
+
+```bash
+  npm install
+```
+
+```bash
+  npm run start
+```
+
+
+## Support
+
+If you have any feedback, please reach out to me at kumar.prashant477@gmail.com
+
