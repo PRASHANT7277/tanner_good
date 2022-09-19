@@ -1,5 +1,5 @@
 
-# Project Title
+# Tanner Goods Clone
 
 This is a clone of E-commerce site which Deals with the highest quality leather belts, wallets and accessories,
 including the Mazama Wares collection of handcrafted glassware etc.
