@@ -11,16 +11,17 @@ export default function SingleProduct() {
   const params = useParams();
  
   useEffect(() => {
-    axios.get(`https://prashant-json-server.herokuapp.com/collections/${params.id}`)
-      .then((res) => setData(res.data))
+    axios
+      .get(`https://real-tan-adder-hose.cyclic.app/collections/${params.id}`)
+      .then((res) => setData(res.data));
       console.log(data)
   },[params.id,data]);
   
   function handleCart(data){
     axios({
-      url: `https://prashant-json-server.herokuapp.com/procart`,
+      url: `https://real-tan-adder-hose.cyclic.app/cart`,
       method: "POST",
-      data: data
+      data: data,
     });
     alert("Item added to cart");
 

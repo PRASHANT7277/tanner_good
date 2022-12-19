@@ -11,8 +11,9 @@ export default function Cart(){
     const [data,setData]=useState([])
     
    function handleGet(){
-      axios.get("https://prashant-json-server.herokuapp.com/procart")
-      .then((res) => setData(res.data))
+      axios
+        .get("https://real-tan-adder-hose.cyclic.app/cart")
+        .then((res) => setData(res.data));
    }
   useEffect(()=>{
     handleGet()
@@ -20,17 +21,17 @@ export default function Cart(){
   })
     function handleDelete(id){
       axios({
-        url:`https://prashant-json-server.herokuapp.com/procart/${id}`,
-        method:'DELETE'
-      })
+        url: `https://real-tan-adder-hose.cyclic.app/cart/${id}`,
+        method: "DELETE",
+      });
       
     }
     const HandleCount = (id,no,qty,price,aprice)=>{
          axios({
-            url: `https://prashant-json-server.herokuapp.com/procart/${id}`,
-            method: "PATCH",
-            data: { qty: qty+no,price:price+(aprice*no) }
-          })
+           url: `https://real-tan-adder-hose.cyclic.app/cart/${id}`,
+           method: "PATCH",
+           data: { qty: qty + no, price: price + aprice * no },
+         });
    
   }
   function calculateTotal(){

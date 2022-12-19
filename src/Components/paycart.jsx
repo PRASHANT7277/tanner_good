@@ -10,8 +10,9 @@ export default function PayCart(){
     const [data,setData]=useState([])
     
    function handleGet(){
-      axios.get("https://prashant-json-server.herokuapp.com/procart")
-      .then((res) => setData(res.data))
+      axios
+        .get("https://real-tan-adder-hose.cyclic.app/cart")
+        .then((res) => setData(res.data));
    }
   useEffect(()=>{
     handleGet()

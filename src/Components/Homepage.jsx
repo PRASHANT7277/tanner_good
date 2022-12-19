@@ -12,11 +12,11 @@ export default function Homepage(){
     const [data1,setData1]=useState()
      
     function getData(){
-        axios.get('https://prashant-json-server.herokuapp.com/first')
+        axios.get('https://real-tan-adder-hose.cyclic.app/first')
         .then((res)=>setData(res.data))
     }
     function getData1(){
-        axios.get('https://prashant-json-server.herokuapp.com/final')
+        axios.get('https://real-tan-adder-hose.cyclic.app/final')
         .then((res)=>setData1(res.data))
     }
    

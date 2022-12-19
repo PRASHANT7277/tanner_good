@@ -9,8 +9,11 @@ export default function EverydayArrival(){
     const [data,setData]=useState()
     const [type,setType]=useState('ASC')
  function getData(){
-        axios.get(`https://prashant-json-server.herokuapp.com/eday?_sort=price&_order=${type}`)
-        .then((res)=>setData(res.data))
+        axios
+          .get(
+            `https://real-tan-adder-hose.cyclic.app/eday?_sort=price&_order=${type}`
+          )
+          .then((res) => setData(res.data));
     }
      useEffect(()=>{
        getData()

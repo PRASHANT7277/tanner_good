@@ -9,7 +9,7 @@ import { useState,useEffect } from "react";
 export default function OffCart(){
   const [data,setData]=useState([])
   function handleGet(){
-    axios.get("https://prashant-json-server.herokuapp.com/procart")
+    axios.get("https://real-tan-adder-hose.cyclic.app/cart")
     .then((res) => setData(res.data))
  }
 useEffect(()=>{
@@ -17,7 +17,7 @@ useEffect(()=>{
 })
 function handleDelete(id){
   axios({
-    url:`https://prashant-json-server.herokuapp.com/procart/${id}`,
+    url:`https://real-tan-adder-hose.cyclic.app/cart/${id}`,
     method:'DELETE'
   })
   
@@ -25,7 +25,7 @@ function handleDelete(id){
 const HandleCount = (id,no,qty,price,aprice)=>{
   
     axios({
-      url: `https://prashant-json-server.herokuapp.com/procart/${id}`,
+      url: `https://real-tan-adder-hose.cyclic.app/cart/${id}`,
       method: "PATCH",
       data: { qty: qty+no,price:price+(aprice*no) }
     })
