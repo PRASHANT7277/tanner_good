@@ -16,28 +16,43 @@ import Login from '../Components/login'
 import FinalSale from '../Components/finalsale'
 import SingleProduct from '../Components/singleProduct'
 import Payment from '../Components/payment'
+import PrivateRoute from '../context/private'
 export default function AllRoute(){
-    return(
-        <>
+    return (
+      <>
         <Routes>
-            <Route  path="/" element={<Homepage/>}/>
-            <Route  path="/apothecary" element={<Apothecary/>}/>
-            <Route  path="/apparel" element={<Apparel/>}/>
-            <Route  path="/bestseller" element={<BestSeller/>}/>
-            <Route  path="/ceramicware" element={<CeramicWare/>}/>
-            <Route  path="/everyday" element={<EverydayArrival/>}/>
-            <Route  path="/glassware" element={<GlassWare/>}/>
-            <Route  path="/lightweight" element={<LightWeight/>}/>
-            <Route  path="/newarrival" element={<NewArrival/>}/>
-            <Route  path="/summer" element={<Summer/>}/>
-            <Route  path="/tableware" element={<TableWare/>}/>
-            <Route  path="/cart" element={<Cart/>}/>
-            <Route  path="/signup" element={<Signup/>}/>
-            <Route  path="/login" element={<Login/>}/>
-            <Route  path="/finalsale" element={<FinalSale/>}/>
-            <Route  path="/collections/:id" element={<SingleProduct/>}/>
-            <Route   path="/payment" element={<Payment/>}/>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/apothecary" element={<Apothecary />} />
+          <Route path="/apparel" element={<Apparel />} />
+          <Route path="/bestseller" element={<BestSeller />} />
+          <Route path="/ceramicware" element={<CeramicWare />} />
+          <Route path="/everyday" element={<EverydayArrival />} />
+          <Route path="/glassware" element={<GlassWare />} />
+          <Route path="/lightweight" element={<LightWeight />} />
+          <Route path="/newarrival" element={<NewArrival />} />
+          <Route path="/summer" element={<Summer />} />
+          <Route path="/tableware" element={<TableWare />} />
+          <Route
+            path="/cart"
+            element={
+              <PrivateRoute>
+                <Cart />
+              </PrivateRoute>
+            }
+          />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/finalsale" element={<FinalSale />} />
+          <Route path="/collections/:id" element={<SingleProduct />} />
+          <Route
+            path="/payment"
+            element={
+              <PrivateRoute>
+                <Payment />
+              </PrivateRoute>
+            }
+          />
         </Routes>
-        </>
-    )
+      </>
+    );
 }
